@@ -1,7 +1,5 @@
 package org.alexey.bookings.dto;
 
-import com.oracle.wls.shaded.org.apache.xpath.res.XPATHErrorResources_it;
-
 import java.time.LocalDate;
 
 public class FlightFilter {

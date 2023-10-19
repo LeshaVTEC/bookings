@@ -14,7 +14,7 @@ public class FlightDaoFactory {
         if (instance == null) {
             synchronized (FlightDaoFactory.class){
                 if (instance == null){
-                    instance = new FlightDao();
+                    instance = new FlightDao(EntityManagerFactoryFactory.getInstance());
                 }
             }
         } return instance;

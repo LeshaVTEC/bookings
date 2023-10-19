@@ -24,7 +24,7 @@
                               <tbody>
                                   <% for (Aircraft aircraft : aircrafts) { %>
                                     <tr>
-                                      <td><%= aircraft.getAircraft_code() %></td>
+                                      <td><%= aircraft.getAircraftCode() %></td>
                                       <td><%= aircraft.getModel() %></td>
                                       <td><%= aircraft.getRange() %></td>
                                     </tr>

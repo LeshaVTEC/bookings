@@ -25,8 +25,5 @@ public class JsonFlightServlet extends HttpServlet {
 
         PrintWriter writer = resp.getWriter();
         objectMapper.writeValue(writer, flightService.getAllFlights());
-
-        req.getRequestDispatcher("/template/flights.jsp").forward(req, resp);
-
     }
 }

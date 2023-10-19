@@ -25,6 +25,5 @@ public class JsonAirportServlet extends HttpServlet {
 
         PrintWriter writer = resp.getWriter();
         objectMapper.writeValue(writer, airportService.getAllAirports());
-        req.getRequestDispatcher("/template/airports.jsp").forward(req, resp);
     }
 }
